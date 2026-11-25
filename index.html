@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Daily Brief</title>
   <link rel="icon" href="img/icon.png" type="image/png" />
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
     <div class="header-content">
       <img src="img/logo.jpg" alt="The Daily Brief Logo" width="450px" />
@@ -18,143 +19,197 @@
         2026
       </h3>
     </div>
-    <nav class="nav-bar">
+  </header>
+  <!-- Navigation Bar Section -->
+  <nav class="nav-bar">
+    <!--Hamburger Menu-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;Menu</label>
+    <div class="nav-links">
       <a href="#">Home</a>
       <a href="#Top-story">Top Story</a>
       <a href="#new-ai-tech">New AI Tech (2026)</a>
       <a href="#it-market">IT Job Market Reality</a>
       <a href="#subscribe">Subscribe</a>
       <a href="#about">About</a>
-    </nav>
-  </header>
-  <main>
-    <article id="Top-story">
-      <h2>
-        The AI Revolution in 2026: From Simple Chatbots to Autonomous Agents &
-        Reshaping of the IT Industry
-      </h2>
-      <h3>
-        How new AI breakthroughs are boosting productivity by 40% while
-        rewriting the rules for software developers.
-      </h3>
-      <p style="font-size: 13px;">By Aravind Gnanavel | Published: November 22, 2026</p>
-      <img src="img/img.jpg" alt="AI Revolution in 2026" />
-      <p>
-        <i>Modern AI tools are helping developers build software faster in
-          2026.</i>
-      </p>
-      <p>
-        In 2026, Artificial Intelligence is no longer just a tool that answers
-        basic questions or writes simple emails—it has become the core engine
-        of modern work. Companies that actively integrate AI into their daily
-        operations are seeing up to 40% higher productivity growth compared to
-        traditional businesses.
-      </p>
-      <p>
-        <strong>"AI will not replace developers, but developers who use AI will
-          replace those who don't."</strong>
-      </p>
-    </article>
-    <section id="new-ai-tech">
-      <h2>What is New in AI (2026)</h2>
-      <p>
-        Here are the major AI technologies introduced in 2026 that are
-        changing how developers build software and how businesses work every
-        day:
-      </p>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>AI Technology</th>
-            <th>What It Does</th>
-            <th>How It Changed Work</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Autonomous AI Agents</td>
-            <td>
-              Plans, Writes, and Tests multi-step Software Tasks on its own
-            </td>
-            <td>
-              Turned AI from a Simple Chatbot into an active Coding partner
-            </td>
-          </tr>
-          <tr>
-            <td>Local Laptop AI</td>
-            <td>
-              Compact models like Inkling 2 Mini that run offline on personal
-              laptops
-            </td>
-            <td>
-              Removed the need for expensive cloud servers and improved
-              privacy
-            </td>
-          </tr>
-          <tr>
-            <td>AI video & World Models</td>
-            <td>
-              Creates Realistic Videos and 3D environments from simple text
-              Prompts
-            </td>
-            <td>Made gaming, design, and product testing much faster</td>
-          </tr>
-          <tr>
-            <td>AI Verification Tools</td>
-            <td>
-              Detects AI-Generated images, videos, and audio across the
-              internet
-            </td>
-            <td>
-              Helps stop fake news and protects original digital content
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <aside id="it-market">
-      <h2>IT Job Market Reality in 2026</h2>
-      <p>
-        How AI is Changing Hiring and software jobs in the IT industry today
-      </p>
-      <ul>
-        <li>
-          <b>Hiring Shift:</b> Companies now look for developers who can build
-          real projects using AI tools, rather than just memorizing syntax.
-        </li>
-        <li>
-          <b>High-Demand Roles:</b> AI Full-Stack Developer, Cloud Engineer,
-          and Cybersecurity roles are growing rapidly in 2026.
-        </li>
-        <li>
-          <b>Core Fundamentals Matter:</b> Strong basics in HTML, CSS,
-          JavaScript, and SQL are still essential to test and fix AI-written
-          code.
-        </li>
-        <li>
-          <b>Continuous Learning:</b> Freshers who combine web development
-          skills with basic AI integration stand out in interviews.
-        </li>
-      </ul>
+    </div>
+  </nav>
+  <div class="grid-container">
+    <!-- Main Content -->
+    <main>
+      <!-- Top Article Section -->
+      <article id="Top-story">
+        <h2>
+          The AI Revolution in 2026: From Simple Chatbots to Autonomous Agents &
+          Reshaping of the IT Industry
+        </h2>
+        <h3>
+          How new AI breakthroughs are boosting productivity by 40% while
+          rewriting the rules for software developers.
+        </h3>
+        <p style="font-size: 13px">
+          By Aravind Gnanavel | Published: November 22, 2026
+        </p>
+        <img src="img/img.jpg" alt="AI Revolution in 2026" />
+        <p>
+          <i>Modern AI tools are helping developers build software faster in
+            2026.</i>
+        </p>
+        <p>
+          In 2026, Artificial Intelligence is no longer just a tool that answers
+          basic questions or writes simple emails—it has become the core engine
+          of modern work. Companies that actively integrate AI into their daily
+          operations are seeing up to 40% higher productivity growth compared to
+          traditional businesses.
+        </p>
+        <p>
+          <strong>"AI will not replace developers, but developers who use AI will
+            replace those who don't."</strong>
+        </p>
+      </article>
+      <!-- New AI Technologies Section -->
+      <section id="new-ai-tech">
+        <h2>What is New in AI (2026)</h2>
+        <p>
+          Here are the major AI technologies introduced in 2026 that are
+          changing how developers build software and how businesses work every
+          day:
+        </p>
+        <!-- New AI Technologies Table Section -->
+        <table border="1">
+          <thead>
+            <tr>
+              <th>AI Technology</th>
+              <th>What It Does</th>
+              <th>How It Changed Work</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Autonomous AI Agents</td>
+              <td>
+                Plans, Writes, and Tests multi-step Software Tasks on its own
+              </td>
+              <td>
+                Turned AI from a Simple Chatbot into an active Coding partner
+              </td>
+            </tr>
+            <tr>
+              <td>Local Laptop AI</td>
+              <td>
+                Compact models like Inkling 2 Mini that run offline on personal
+                laptops
+              </td>
+              <td>
+                Removed the need for expensive cloud servers and improved
+                privacy
+              </td>
+            </tr>
+            <tr>
+              <td>AI video & World Models</td>
+              <td>
+                Creates Realistic Videos and 3D environments from simple text
+                Prompts
+              </td>
+              <td>Made gaming, design, and product testing much faster</td>
+            </tr>
+            <tr>
+              <td>AI Verification Tools</td>
+              <td>
+                Detects AI-Generated images, videos, and audio across the
+                internet
+              </td>
+              <td>
+                Helps stop fake news and protects original digital content
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- IT Job Market Section -->
+      <section id="it-market">
+        <h2>IT Job Market Reality in 2026</h2>
+        <p>
+          How AI is Changing Hiring and software jobs in the IT industry today
+        </p>
+        <ul>
+          <li>
+            <b>Hiring Shift:</b> Companies now look for developers who can build
+            real projects using AI tools, rather than just memorizing syntax.
+          </li>
+          <li>
+            <b>High-Demand Roles:</b> AI Full-Stack Developer, Cloud Engineer,
+            and Cybersecurity roles are growing rapidly in 2026.
+          </li>
+          <li>
+            <b>Core Fundamentals Matter:</b> Strong basics in HTML, CSS,
+            JavaScript, and SQL are still essential to test and fix AI-written
+            code.
+          </li>
+          <li>
+            <b>Continuous Learning:</b> Freshers who combine web development
+            skills with basic AI integration stand out in interviews.
+          </li>
+        </ul>
+      </section>
+      <!-- Subscription Form Section-->
+      <form id="subscribe" onsubmit="
+          alert('Thank you for subscribing!');
+          return false;
+        ">
+        <h2>Subscribe to The Daily Brief</h2>
+        <p>
+          Get weekly updates on AI breakthroughs and IT career trends directly
+          in your inbox.
+        </p>
+        <label>Full Name:</label>
+        <input type="text" name="fullname" placeholder="Enter Your Name" required  autocomplete="off"/>
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="Enter Your Email Address" required autocomplete="off"/>
+        <button type="Submit">Subscribe</button>
+      </form>
+    </main>
+    <!--Right side News Boxes Section -->
+    <aside class="sidebar">
+      <!--Recent News Box-->
+      <div class="sidebar-box">
+        <h3>Related News</h3>
+        <div class="news-item">
+          <h4>OpenAI & Cisco Launch 'Shirudo' AI Security Tool</h4>
+          <p>OpenAI and Cisco released an open-source AI security shield that protects Linux servers from cyber attacks
+            without
+            restarts.</p>
+        </div>
+        <div class="news-item">
+          <h4>India's Tech Hiring Hits 1.3 Lakh Openings</h4>
+          <p>IT services and GCC companies recorded 1.30 lakh active tech job openings in November 2026, with 10,000+ in
+            Chennai
+            alone.</p>
+        </div>
+        <div class="news-item">
+          <h4>Google Ships Gemini Omni 1.2 Flash</h4>
+          <p>Google released its faster multimodal AI model extending video generation to 15 seconds while cutting API
+            costs by 30%.</p>
+        </div>
+      </div>
+      <!--News Snapshot-->
+      <div class="sidebar-box">
+        <h3>Snapshot</h3>
+        <ul class="snapshot-list">
+          <li><b>Active Tech Jobs (India):</b> 1.30 Lakh openings (+27% YoY growth)</li>
+          <li><b>Top Hiring Cities:</b> Bengaluru (35k), Hyderabad (16k), Chennai (10k)</li>
+          <li><b>IT Services Hiring:</b> Top 24 Indian IT firms added 31,000+ staff in 6 months</li>
+          <li><b>Work Mode Trend:</b> 82% of tech roles now operate in Work-From-Office mode</li>
+        </ul>
+      </div>
     </aside>
-    <form id="subscribe" onsubmit="
-            alert('Thank you for subscribing!');
-            return false;">
-      <h2>
-        Subscribe to The Daily Brief
-      </h2>
-      <p>
-        Get weekly updates on AI breakthroughs and IT career trends directly in your inbox.
-      </p>
-      <label>Full Name:</label>
-      <input type="text" name="fullname" placeholder="Enter Your Name" required />
-      <label>Email Address:</label>
-      <input type="email" name="email" placeholder="Enter Your Email Address" required />
-      <button type="Submit">Subscribe</button>
-    </form>
-  </main>
+  </div>
+  <!-- Footer Section -->
   <footer id="about">
-    <p>&copy; 2026 The Daily Brief. All rights reserved. | Contact:editor@thedailybrief.com</p>
+    <p>
+      &copy; 2026 The Daily Brief. All rights reserved. |
+      Contact:editor@thedailybrief.com
+    </p>
   </footer>
 </body>
 
